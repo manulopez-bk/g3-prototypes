@@ -1,0 +1,23 @@
+/* G3 Juguetería — design tokens v1 (mid-century atomic age) */
+:root{
+  /* MCM working palette */
+  --paper:#F7F0E1; --paper-deep:#F0E6CF; --ink:#2B2320; --ink-soft:#6E6257;
+  --line:#E0D4BA; --orange:#E2622B; --orange-deep:#C94F1F; --orange-hi:#F0A47E;
+  --teal:#1F7A72; --teal-deep:#175F59; --teal-light:#7FC4B8;
+  --mustard:#E8A33D; --mustard-deep:#C98E2F; --mustard-hi:#F6E7C6;
+  --coral:#E98C6B; --coral-deep:#C96A48; --coral-hi:#F2A886;
+  --navy:#16233F; --cream:#F7F0E1;
+  /* corporate brand (report suite) */
+  --g3-blue:#3A497D; --g3-orange:#FF8C15; --g3-white:#FFFDFD;
+  /* motion */
+  --spring:cubic-bezier(.34,1.56,.64,1);
+  /* type */
+  --font-display:Futura,"Century Gothic","Avenir Next","Trebuchet MS",sans-serif;
+  --font-body:"Avenir Next",Avenir,Futura,"Century Gothic","Segoe UI",sans-serif;
+}
+@keyframes float{50%{transform:translateY(-9px)}}
+@keyframes sway{50%{transform:rotate(5deg)}}
+@keyframes bob{50%{transform:translateY(-4px)}}
+@keyframes tw{50%{transform:scale(.55) rotate(18deg);opacity:.55}}
+@keyframes boing{30%{transform:scale(1.1,.92)}55%{transform:scale(.95,1.07)}80%{transform:scale(1.02,.98)}100%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
