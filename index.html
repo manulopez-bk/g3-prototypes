@@ -90,6 +90,8 @@
   @keyframes sway{50%{transform:rotate(5deg)}}
   .bob{animation:bob 3.2s ease-in-out infinite}
   @keyframes bob{50%{transform:translateY(-4px)}}
+  .waddle{transform-box:fill-box;transform-origin:50% 100%;animation:waddle 2.4s ease-in-out infinite}
+  @keyframes waddle{25%{transform:rotate(-3deg)}75%{transform:rotate(3deg)}}
 
   /* ---------- ticker ---------- */
   .ticker{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:15px 0;overflow:hidden;white-space:nowrap;margin:44px 0 0}
@@ -273,19 +275,21 @@
       <div class="ages">
         <div class="age-card reveal">
           <div class="age-art">
-            <svg viewBox="0 0 96 80" width="96" aria-hidden="true">
-              <g class="sway">
-                <line x1="48" y1="2" x2="48" y2="9" stroke="#2B2320" stroke-width="3" stroke-linecap="round"/>
-                <path d="M12 26 Q30 12 48 15 Q68 18 84 13" fill="none" stroke="#2B2320" stroke-width="3" stroke-linecap="round"/>
-                <line x1="13" y1="25" x2="13" y2="40" stroke="#2B2320" stroke-width="2"/>
-                <line x1="48" y1="15" x2="48" y2="50" stroke="#2B2320" stroke-width="2"/>
-                <line x1="83" y1="14" x2="83" y2="32" stroke="#2B2320" stroke-width="2"/>
-                <circle cx="13" cy="48" r="8" fill="#1F7A72"/>
-                <circle cx="10.5" cy="45.5" r="2.2" fill="#7FC4B8"/>
-                <path d="M36 57 Q40 47 52 49 Q62 51 60 60 Q56 68 44 66 Q36 63 36 57 Z" fill="#E2622B"/>
-                <circle cx="45" cy="53" r="2.4" fill="#F0A47E"/>
-                <ellipse cx="83" cy="37" rx="7" ry="5" transform="rotate(-20 83 37)" fill="#E8A33D"/>
-                <circle cx="80.5" cy="35" r="1.6" fill="#F7F0E1"/>
+            <svg viewBox="0 0 110 90" width="94" aria-hidden="true">
+              <ellipse cx="55" cy="84" rx="38" ry="4" fill="#2B2320" opacity=".08"/>
+              <path d="M22 72 Q10 64 7 50" fill="none" stroke="#2B2320" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="7" cy="48" r="3.4" fill="#E2622B"/>
+              <rect x="24" y="66" width="54" height="8" rx="4" fill="#1F7A72"/>
+              <circle cx="34" cy="78" r="6" fill="#2B2320"/><circle cx="34" cy="78" r="2.2" fill="#F7F0E1"/>
+              <circle cx="68" cy="78" r="6" fill="#2B2320"/><circle cx="68" cy="78" r="2.2" fill="#F7F0E1"/>
+              <g class="waddle">
+                <path d="M34 52 L25 40 Q24 37 28 39 L38 47 Z" fill="#E8A33D"/>
+                <ellipse cx="52" cy="54" rx="20" ry="13" fill="#E8A33D"/>
+                <ellipse cx="49" cy="55" rx="9" ry="6" transform="rotate(-15 49 55)" fill="#C98E2F"/>
+                <circle cx="68" cy="35" r="10" fill="#E8A33D"/>
+                <path d="M62 30 A10 10 0 0 1 68 25" fill="none" stroke="#F6E7C6" stroke-width="3" stroke-linecap="round"/>
+                <path d="M77 34 L86 37 L77 40 Z" fill="#E2622B"/>
+                <circle cx="70" cy="33" r="1.8" fill="#2B2320"/><circle cx="70.6" cy="32.4" r=".6" fill="#F7F0E1"/>
               </g>
             </svg>
           </div>
