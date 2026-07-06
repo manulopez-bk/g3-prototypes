@@ -1,0 +1,13 @@
+<svg viewBox="0 0 100 76" xmlns="http://www.w3.org/2000/svg">
+  <style>.float{transform-box:fill-box;transform-origin:center;animation:float 5.5s ease-in-out infinite}@keyframes float{50%{transform:translateY(-9px)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  <g class="float">
+    <g transform="translate(50,42) rotate(-14)">
+      <path d="M -40 0 A 40 14 0 0 1 40 0" fill="none" stroke="#E8A33D" stroke-width="5" stroke-linecap="round"/>
+      <circle r="22" fill="#E98C6B"/>
+      <circle cx="-6" cy="-6" r="5" fill="#C96A48"/>
+      <circle cx="8" cy="6" r="4" fill="#C96A48"/>
+      <path d="M -18 -12 A 21 21 0 0 1 -5 -21" fill="none" stroke="#F2A886" stroke-width="4" stroke-linecap="round"/>
+      <path d="M -40 0 A 40 14 0 0 0 40 0" fill="none" stroke="#E8A33D" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

@@ -56,10 +56,12 @@ detail dots + soft ground shadow ellipse. **No bare lines-and-circles primitives
 ## Contents
 
 - `assets/` — 12 approved static SVGs (celestial set, age icons, product spots, all-blue G3 mark)
-- `assets/planeta-heroe-animado.svg` + `assets/atomo-cohete-animado.svg` — the two hero
-  scenes with their animation EMBEDDED in the file (CSS keyframes + SMIL orbits). They play
-  in any browser and even as `<img>` embeds — no JavaScript. The tap-to-boing interaction
-  is site behavior, not in the asset.
+- `assets/*-animado.svg` — LIVING versions: the two hero scenes plus one file per motion
+  token (waddle=duck, bob=car, sway=mobile, float=planet, tw=star). Animation is EMBEDDED
+  in each file (CSS keyframes + SMIL) — plays in any browser, even as an `<img>` embed,
+  no JavaScript. The tap-to-boing interaction is site behavior, not in the asset.
+- 0–3 icon DECISION: pull-along duck (pato-arrastre) chosen by Manu; Calder mobile retired
+  from the prototype but remains approved. Blocks + rattle available to remix.
 - `alternativas-0-3/` — 3 candidate replacements for the 0–3 mobile (reads a bit
   Christmas-ornament): pull-along duck, shape blocks, rattle. Pick or remix.
 - `tokens.css` — palette, type, motion tokens as CSS custom properties + keyframes

@@ -14,7 +14,8 @@ h2{font-family:Futura,"Century Gothic",sans-serif;font-size:.85rem;letter-spacin
 .art{height:170px;display:flex;align-items:center;justify-content:center;padding:18px}
 .wide .art{height:280px}
 .art svg{max-width:100%;max-height:100%}
-.name{font-family:ui-monospace,Menlo,monospace;font-size:.7rem;letter-spacing:.06em;color:#6E6257;padding:10px 16px;border-top:2px solid #E0D4BA}
+.name{font-family:ui-monospace,Menlo,monospace;font-size:.7rem;letter-spacing:.06em;color:#6E6257;padding:10px 16px;border-top:2px solid #E0D4BA;display:flex;justify-content:space-between;gap:8px}
+.tok{color:#E2622B;font-weight:700;white-space:nowrap}
 .dark .art{background:#16233F}
 footer{margin-top:56px;font-size:.75rem;color:#6E6257;letter-spacing:.1em;text-transform:uppercase;font-family:Futura,"Century Gothic",sans-serif}
 </style></head><body><div class="wrap">
@@ -108,7 +109,75 @@ footer{margin-top:56px;font-size:.75rem;color:#6E6257;letter-spacing:.1em;text-t
     </g>
   </g>
 </svg>
-</div><div class="name">atomo-cohete-animado.svg</div></div></div><h2>Celestes (aprobados — no tocar)</h2><div class="grid "><div class="card"><div class="art"><svg viewBox="0 0 440 420" xmlns="http://www.w3.org/2000/svg">
+</div><div class="name">atomo-cohete-animado.svg</div></div></div><h2>Tokens de movimiento — un archivo vivo por cada verbo del sistema</h2><div class="grid"><div class="card"><div class="art"><svg viewBox="0 0 110 90" xmlns="http://www.w3.org/2000/svg">
+  <style>.waddle{transform-box:fill-box;transform-origin:50% 100%;animation:waddle 2.4s ease-in-out infinite}@keyframes waddle{25%{transform:rotate(-3deg)}75%{transform:rotate(3deg)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  <ellipse cx="55" cy="84" rx="38" ry="4" fill="#2B2320" opacity=".08"/>
+  <path d="M22 72 Q10 64 7 50" fill="none" stroke="#2B2320" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="7" cy="48" r="3.4" fill="#E2622B"/>
+  <rect x="24" y="66" width="54" height="8" rx="4" fill="#1F7A72"/>
+  <circle cx="34" cy="78" r="6" fill="#2B2320"/><circle cx="34" cy="78" r="2.2" fill="#F7F0E1"/>
+  <circle cx="68" cy="78" r="6" fill="#2B2320"/><circle cx="68" cy="78" r="2.2" fill="#F7F0E1"/>
+  <g class="waddle">
+    <path d="M34 52 L25 40 Q24 37 28 39 L38 47 Z" fill="#E8A33D"/>
+    <ellipse cx="52" cy="54" rx="20" ry="13" fill="#E8A33D"/>
+    <ellipse cx="49" cy="55" rx="9" ry="6" transform="rotate(-15 49 55)" fill="#C98E2F"/>
+    <circle cx="68" cy="35" r="10" fill="#E8A33D"/>
+    <path d="M62 30 A10 10 0 0 1 68 25" fill="none" stroke="#F6E7C6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M77 34 L86 37 L77 40 Z" fill="#E2622B"/>
+    <circle cx="70" cy="33" r="1.8" fill="#2B2320"/><circle cx="70.6" cy="32.4" r=".6" fill="#F7F0E1"/>
+  </g>
+</svg>
+</div><div class="name">pato-arrastre-animado.svg <span class="tok">waddle · 2.4s</span></div></div><div class="card"><div class="art"><svg viewBox="0 0 110 70" xmlns="http://www.w3.org/2000/svg">
+  <style>.bob{animation:bob 3.2s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-4px)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  <ellipse cx="55" cy="61" rx="42" ry="4" fill="#2B2320" opacity=".08"/>
+  <g class="bob">
+    <path d="M22 31 L14 15 Q13 12 17 14 L32 29 Z" fill="#E8A33D"/>
+    <path d="M10 46 Q8 33 22 31 L36 29 Q42 17 57 16 Q70 15 76 27 L86 29 Q99 31 101 40 Q102 46 94 46 L16 46 Z" fill="#E2622B"/>
+    <path d="M40 28 Q45 19 56 18 Q64 18 67 26 Z" fill="#F7F0E1"/>
+    <path d="M16 41 L94 41 Q97 41 96 44 L95 46 L16 46 Z" fill="#C94F1F"/>
+    <line x1="20" y1="38" x2="92" y2="38" stroke="#F7F0E1" stroke-width="2.5" stroke-linecap="round" opacity=".85"/>
+    <path d="M78 21 Q84 23 88 28" fill="none" stroke="#F0A47E" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="99" cy="36" r="2.6" fill="#E8A33D"/>
+    <circle cx="6" cy="40" r="2.4" fill="#6E6257" opacity=".45"/>
+    <circle cx="2" cy="35" r="1.6" fill="#6E6257" opacity=".3"/>
+  </g>
+  <circle cx="30" cy="49" r="9" fill="#2B2320"/><circle cx="30" cy="49" r="4" fill="#F7F0E1"/><circle cx="30" cy="49" r="1.6" fill="#E2622B"/>
+  <circle cx="78" cy="49" r="9" fill="#2B2320"/><circle cx="78" cy="49" r="4" fill="#F7F0E1"/><circle cx="78" cy="49" r="1.6" fill="#E2622B"/>
+</svg>
+</div><div class="name">carro-aletas-animado.svg <span class="tok">bob · 3.2s</span></div></div><div class="card"><div class="art"><svg viewBox="0 0 96 80" xmlns="http://www.w3.org/2000/svg">
+  <style>.sway{transform-box:fill-box;transform-origin:top center;animation:sway 4.5s ease-in-out infinite}@keyframes sway{50%{transform:rotate(5deg)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  <g class="sway">
+    <line x1="48" y1="2" x2="48" y2="9" stroke="#2B2320" stroke-width="3" stroke-linecap="round"/>
+    <path d="M12 26 Q30 12 48 15 Q68 18 84 13" fill="none" stroke="#2B2320" stroke-width="3" stroke-linecap="round"/>
+    <line x1="13" y1="25" x2="13" y2="40" stroke="#2B2320" stroke-width="2"/>
+    <line x1="48" y1="15" x2="48" y2="50" stroke="#2B2320" stroke-width="2"/>
+    <line x1="83" y1="14" x2="83" y2="32" stroke="#2B2320" stroke-width="2"/>
+    <circle cx="13" cy="48" r="8" fill="#1F7A72"/>
+    <circle cx="10.5" cy="45.5" r="2.2" fill="#7FC4B8"/>
+    <path d="M36 57 Q40 47 52 49 Q62 51 60 60 Q56 68 44 66 Q36 63 36 57 Z" fill="#E2622B"/>
+    <circle cx="45" cy="53" r="2.4" fill="#F0A47E"/>
+    <ellipse cx="83" cy="37" rx="7" ry="5" transform="rotate(-20 83 37)" fill="#E8A33D"/>
+    <circle cx="80.5" cy="35" r="1.6" fill="#F7F0E1"/>
+  </g>
+</svg>
+</div><div class="name">movil-calder-animado.svg <span class="tok">sway · 4.5s</span></div></div><div class="card"><div class="art"><svg viewBox="0 0 100 76" xmlns="http://www.w3.org/2000/svg">
+  <style>.float{transform-box:fill-box;transform-origin:center;animation:float 5.5s ease-in-out infinite}@keyframes float{50%{transform:translateY(-9px)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  <g class="float">
+    <g transform="translate(50,42) rotate(-14)">
+      <path d="M -40 0 A 40 14 0 0 1 40 0" fill="none" stroke="#E8A33D" stroke-width="5" stroke-linecap="round"/>
+      <circle r="22" fill="#E98C6B"/>
+      <circle cx="-6" cy="-6" r="5" fill="#C96A48"/>
+      <circle cx="8" cy="6" r="4" fill="#C96A48"/>
+      <path d="M -18 -12 A 21 21 0 0 1 -5 -21" fill="none" stroke="#F2A886" stroke-width="4" stroke-linecap="round"/>
+      <path d="M -40 0 A 40 14 0 0 0 40 0" fill="none" stroke="#E8A33D" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
+</div><div class="name">planeta-mini-animado.svg <span class="tok">float · 5.5s</span></div></div><div class="card"><div class="art"><svg viewBox="-18 -18 36 36" xmlns="http://www.w3.org/2000/svg">
+  <style>.tw{transform-box:fill-box;transform-origin:center;animation:tw 3.4s ease-in-out infinite}@keyframes tw{50%{transform:scale(.55) rotate(18deg);opacity:.55}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+  <g class="tw"><path d="M0 -15 L3.4 -3.4 L15 0 L3.4 3.4 L0 15 L-3.4 3.4 L-15 0 L-3.4 -3.4 Z" fill="#E8A33D"/></g>
+</svg>
+</div><div class="name">estrella-destello-animado.svg <span class="tok">tw (twinkle) · 3.4s</span></div></div></div><h2>Celestes (aprobados — no tocar)</h2><div class="grid"><div class="card"><div class="art"><svg viewBox="0 0 440 420" xmlns="http://www.w3.org/2000/svg">
   <path transform="translate(64,66)" d="M0 -15 L3.4 -3.4 L15 0 L3.4 3.4 L0 15 L-3.4 3.4 L-15 0 L-3.4 -3.4 Z" fill="#E8A33D"/>
   <path transform="translate(388,96)" d="M0 -11 L2.6 -2.6 L11 0 L2.6 2.6 L0 11 L-2.6 2.6 L-11 0 L-2.6 -2.6 Z" fill="#E98C6B"/>
   <path transform="translate(356,338)" d="M0 -13 L3 -3 L13 0 L3 3 L0 13 L-3 3 L-13 0 L-3 -3 Z" fill="#1F7A72"/>
@@ -179,20 +248,22 @@ footer{margin-top:56px;font-size:.75rem;color:#6E6257;letter-spacing:.1em;text-t
 </div><div class="name">planeta-mini.svg</div></div><div class="card"><div class="art"><svg viewBox="-18 -18 36 36" xmlns="http://www.w3.org/2000/svg">
   <path d="M0 -15 L3.4 -3.4 L15 0 L3.4 3.4 L0 15 L-3.4 3.4 L-15 0 L-3.4 -3.4 Z" fill="#E8A33D"/>
 </svg>
-</div><div class="name">estrella-destello.svg</div></div></div><h2>Iconos de edad</h2><div class="grid "><div class="card"><div class="art"><svg viewBox="0 0 96 80" xmlns="http://www.w3.org/2000/svg">
-  <line x1="48" y1="2" x2="48" y2="9" stroke="#2B2320" stroke-width="3" stroke-linecap="round"/>
-  <path d="M12 26 Q30 12 48 15 Q68 18 84 13" fill="none" stroke="#2B2320" stroke-width="3" stroke-linecap="round"/>
-  <line x1="13" y1="25" x2="13" y2="40" stroke="#2B2320" stroke-width="2"/>
-  <line x1="48" y1="15" x2="48" y2="50" stroke="#2B2320" stroke-width="2"/>
-  <line x1="83" y1="14" x2="83" y2="32" stroke="#2B2320" stroke-width="2"/>
-  <circle cx="13" cy="48" r="8" fill="#1F7A72"/>
-  <circle cx="10.5" cy="45.5" r="2.2" fill="#7FC4B8"/>
-  <path d="M36 57 Q40 47 52 49 Q62 51 60 60 Q56 68 44 66 Q36 63 36 57 Z" fill="#E2622B"/>
-  <circle cx="45" cy="53" r="2.4" fill="#F0A47E"/>
-  <ellipse cx="83" cy="37" rx="7" ry="5" transform="rotate(-20 83 37)" fill="#E8A33D"/>
-  <circle cx="80.5" cy="35" r="1.6" fill="#F7F0E1"/>
+</div><div class="name">estrella-destello.svg</div></div></div><h2>Iconos de edad</h2><div class="grid"><div class="card"><div class="art"><svg viewBox="0 0 110 90" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="55" cy="84" rx="38" ry="4" fill="#2B2320" opacity=".08"/>
+  <path d="M22 72 Q10 64 7 50" fill="none" stroke="#2B2320" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="7" cy="48" r="3.4" fill="#E2622B"/>
+  <rect x="24" y="66" width="54" height="8" rx="4" fill="#1F7A72"/>
+  <circle cx="34" cy="78" r="6" fill="#2B2320"/><circle cx="34" cy="78" r="2.2" fill="#F7F0E1"/>
+  <circle cx="68" cy="78" r="6" fill="#2B2320"/><circle cx="68" cy="78" r="2.2" fill="#F7F0E1"/>
+  <path d="M34 52 L25 40 Q24 37 28 39 L38 47 Z" fill="#E8A33D"/>
+  <ellipse cx="52" cy="54" rx="20" ry="13" fill="#E8A33D"/>
+  <ellipse cx="49" cy="55" rx="9" ry="6" transform="rotate(-15 49 55)" fill="#C98E2F"/>
+  <circle cx="68" cy="35" r="10" fill="#E8A33D"/>
+  <path d="M62 30 A10 10 0 0 1 68 25" fill="none" stroke="#F6E7C6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M77 34 L86 37 L77 40 Z" fill="#E2622B"/>
+  <circle cx="70" cy="33" r="1.8" fill="#2B2320"/><circle cx="70.6" cy="32.4" r=".6" fill="#F7F0E1"/>
 </svg>
-</div><div class="name">movil-calder.svg</div></div><div class="card"><div class="art"><svg viewBox="0 0 110 70" xmlns="http://www.w3.org/2000/svg">
+</div><div class="name">pato-arrastre.svg</div></div><div class="card"><div class="art"><svg viewBox="0 0 110 70" xmlns="http://www.w3.org/2000/svg">
   <ellipse cx="55" cy="61" rx="42" ry="4" fill="#2B2320" opacity=".08"/>
   <path d="M22 31 L14 15 Q13 12 17 14 L32 29 Z" fill="#E8A33D"/>
   <path d="M10 46 Q8 33 22 31 L36 29 Q42 17 57 16 Q70 15 76 27 L86 29 Q99 31 101 40 Q102 46 94 46 L16 46 Z" fill="#E2622B"/>
@@ -206,7 +277,17 @@ footer{margin-top:56px;font-size:.75rem;color:#6E6257;letter-spacing:.1em;text-t
   <circle cx="30" cy="49" r="9" fill="#2B2320"/><circle cx="30" cy="49" r="4" fill="#F7F0E1"/><circle cx="30" cy="49" r="1.6" fill="#E2622B"/>
   <circle cx="78" cy="49" r="9" fill="#2B2320"/><circle cx="78" cy="49" r="4" fill="#F7F0E1"/><circle cx="78" cy="49" r="1.6" fill="#E2622B"/>
 </svg>
-</div><div class="name">carro-aletas.svg</div></div></div><h2>Spots de producto</h2><div class="grid "><div class="card"><div class="art"><svg viewBox="0 0 110 100" xmlns="http://www.w3.org/2000/svg">
+</div><div class="name">carro-aletas.svg</div></div><div class="card"><div class="art"><svg viewBox="0 0 100 76" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(50,38) rotate(-14)">
+    <path d="M -40 0 A 40 14 0 0 1 40 0" fill="none" stroke="#E8A33D" stroke-width="5" stroke-linecap="round"/>
+    <circle r="22" fill="#E98C6B"/>
+    <circle cx="-6" cy="-6" r="5" fill="#C96A48"/>
+    <circle cx="8" cy="6" r="4" fill="#C96A48"/>
+    <path d="M -18 -12 A 21 21 0 0 1 -5 -21" fill="none" stroke="#F2A886" stroke-width="4" stroke-linecap="round"/>
+    <path d="M -40 0 A 40 14 0 0 0 40 0" fill="none" stroke="#E8A33D" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
+</div><div class="name">planeta-mini.svg</div></div></div><h2>Spots de producto</h2><div class="grid"><div class="card"><div class="art"><svg viewBox="0 0 110 100" xmlns="http://www.w3.org/2000/svg">
   <ellipse cx="55" cy="92" rx="34" ry="4" fill="#2B2320" opacity=".08"/>
   <path d="M30 38 Q20 10 27 6 Q31 4 38 15 L47 29 Z" fill="#175F59"/>
   <path d="M31 30 Q27 15 30 12 Q34 14 40 24 Z" fill="#E98C6B"/>
@@ -264,22 +345,7 @@ footer{margin-top:56px;font-size:.75rem;color:#6E6257;letter-spacing:.1em;text-t
   <path d="M52.5 58 L57.5 58 L57.5 62.5 L62 62.5 L62 67.5 L57.5 67.5 L57.5 72 L52.5 72 L52.5 67.5 L48 67.5 L48 62.5 L52.5 62.5 Z" fill="#E2622B"/>
   <path d="M91 24 L92.8 29.2 L98 31 L92.8 32.8 L91 38 L89.2 32.8 L84 31 L89.2 29.2 Z" fill="#E8A33D"/>
 </svg>
-</div><div class="name">kit-emergencia.svg</div></div></div><h2>Alternativas 0–3 (elegir o remezclar — el móvil lee un poco navideño)</h2><div class="grid "><div class="card"><div class="art"><svg viewBox="0 0 110 90" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="55" cy="84" rx="38" ry="4" fill="#2B2320" opacity=".08"/>
-  <path d="M22 72 Q10 64 7 50" fill="none" stroke="#2B2320" stroke-width="2.2" stroke-linecap="round"/>
-  <circle cx="7" cy="48" r="3.4" fill="#E2622B"/>
-  <rect x="24" y="66" width="54" height="8" rx="4" fill="#1F7A72"/>
-  <circle cx="34" cy="78" r="6" fill="#2B2320"/><circle cx="34" cy="78" r="2.2" fill="#F7F0E1"/>
-  <circle cx="68" cy="78" r="6" fill="#2B2320"/><circle cx="68" cy="78" r="2.2" fill="#F7F0E1"/>
-  <path d="M34 52 L25 40 Q24 37 28 39 L38 47 Z" fill="#E8A33D"/>
-  <ellipse cx="52" cy="54" rx="20" ry="13" fill="#E8A33D"/>
-  <ellipse cx="49" cy="55" rx="9" ry="6" transform="rotate(-15 49 55)" fill="#C98E2F"/>
-  <circle cx="68" cy="35" r="10" fill="#E8A33D"/>
-  <path d="M62 30 A10 10 0 0 1 68 25" fill="none" stroke="#F6E7C6" stroke-width="3" stroke-linecap="round"/>
-  <path d="M77 34 L86 37 L77 40 Z" fill="#E2622B"/>
-  <circle cx="70" cy="33" r="1.8" fill="#2B2320"/><circle cx="70.6" cy="32.4" r=".6" fill="#F7F0E1"/>
-</svg>
-</div><div class="name">pato-arrastre.svg</div></div><div class="card"><div class="art"><svg viewBox="0 0 110 90" xmlns="http://www.w3.org/2000/svg">
+</div><div class="name">kit-emergencia.svg</div></div></div><h2>Alternativas 0–3 no elegidas (disponibles para remezclar)</h2><div class="grid"><div class="card"><div class="art"><svg viewBox="0 0 110 90" xmlns="http://www.w3.org/2000/svg">
   <ellipse cx="55" cy="84" rx="40" ry="4" fill="#2B2320" opacity=".08"/>
   <rect x="24" y="52" width="28" height="28" rx="5" fill="#E2622B"/>
   <circle cx="38" cy="66" r="8" fill="#F7F0E1"/>
@@ -302,12 +368,25 @@ footer{margin-top:56px;font-size:.75rem;color:#6E6257;letter-spacing:.1em;text-t
   <circle cx="55" cy="78" r="6.5" fill="#E8A33D"/>
   <circle cx="52.8" cy="75.8" r="1.8" fill="#F6E7C6"/>
 </svg>
-</div><div class="name">sonajero.svg</div></div></div><h2>Marca</h2><div class="grid "><div class="card"><div class="art"><svg viewBox="540 0 640 640" xmlns="http://www.w3.org/2000/svg">
+</div><div class="name">sonajero.svg</div></div></div><h2>Retirados del prototipo (siguen aprobados)</h2><div class="grid"><div class="card"><div class="art"><svg viewBox="0 0 96 80" xmlns="http://www.w3.org/2000/svg">
+  <line x1="48" y1="2" x2="48" y2="9" stroke="#2B2320" stroke-width="3" stroke-linecap="round"/>
+  <path d="M12 26 Q30 12 48 15 Q68 18 84 13" fill="none" stroke="#2B2320" stroke-width="3" stroke-linecap="round"/>
+  <line x1="13" y1="25" x2="13" y2="40" stroke="#2B2320" stroke-width="2"/>
+  <line x1="48" y1="15" x2="48" y2="50" stroke="#2B2320" stroke-width="2"/>
+  <line x1="83" y1="14" x2="83" y2="32" stroke="#2B2320" stroke-width="2"/>
+  <circle cx="13" cy="48" r="8" fill="#1F7A72"/>
+  <circle cx="10.5" cy="45.5" r="2.2" fill="#7FC4B8"/>
+  <path d="M36 57 Q40 47 52 49 Q62 51 60 60 Q56 68 44 66 Q36 63 36 57 Z" fill="#E2622B"/>
+  <circle cx="45" cy="53" r="2.4" fill="#F0A47E"/>
+  <ellipse cx="83" cy="37" rx="7" ry="5" transform="rotate(-20 83 37)" fill="#E8A33D"/>
+  <circle cx="80.5" cy="35" r="1.6" fill="#F7F0E1"/>
+</svg>
+</div><div class="name">movil-calder.svg</div></div></div><h2>Marca</h2><div class="grid"><div class="card"><div class="art"><svg viewBox="540 0 640 640" xmlns="http://www.w3.org/2000/svg">
   <circle cx="860" cy="320" r="320" fill="#3A497D"/>
   <g transform="translate(0,640) scale(0.1,-0.1)">
     <path fill="#FFFDFD" d="M6398 4050 c-135 -23 -268 -90 -358 -180 -154 -154 -197 -329 -187 -755 6 -259 18 -328 83 -463 61 -127 198 -242 354 -295 65 -22 68 -22 884 -25 725 -2 825 -1 873 13 111 32 181 106 203 211 7 35 10 150 8 322 l-3 267 -29 58 c-19 41 -42 69 -75 92 -87 63 -104 65 -632 65 -472 0 -475 0 -519 -22 -115 -58 -123 -203 -17 -282 28 -20 40 -21 489 -24 l461 -3 -7 -61 c-3 -33 -6 -117 -6 -185 l0 -124 -742 3 -743 3 -63 29 c-96 44 -149 116 -172 231 -18 93 -9 525 13 590 19 59 73 126 128 161 90 57 -13 54 2069 54 1875 0 1916 -1 1958 -20 57 -26 81 -78 82 -177 0 -87 -22 -150 -57 -164 -14 -5 -334 -9 -757 -9 l-732 0 -44 -22 c-59 -31 -82 -65 -88 -131 -5 -65 12 -104 65 -144 l36 -28 762 -5 c614 -4 765 -8 778 -18 28 -24 40 -80 35 -172 -5 -97 -18 -128 -71 -160 -31 -19 -58 -20 -922 -20 -845 0 -892 -1 -931 -19 -103 -47 -131 -174 -56 -255 55 -58 13 -56 990 -56 570 0 919 4 953 10 119 23 227 95 293 195 67 100 79 150 80 325 0 174 -8 206 -69 290 l-36 49 35 46 c45 58 66 127 73 240 7 107 -14 230 -53 312 -54 113 -176 211 -303 245 -61 16 -204 17 -2026 16 -1078 0 -1981 -4 -2007 -8z"/>
   </g>
 </svg>
 </div><div class="name">g3-marca-azul.svg</div></div></div>
-<footer>Grupo + Tres · kit v1.1 · Julio 2026 · estándar de calidad: "el planeta"</footer>
+<footer>Grupo + Tres · kit v1.2 · Julio 2026 · estándar de calidad: "el planeta"</footer>
 </div></body></html>
