@@ -73,7 +73,7 @@
   .btn-primary:hover{box-shadow:0 12px 26px -12px rgba(226,98,43,.55)}
   .btn-ghost{border-color:var(--ink);color:var(--ink)}
   .scene-stage{position:relative;display:flex;flex-direction:column;align-items:center;gap:10px}
-  #planetScene{cursor:pointer;overflow:visible}
+  #heroScene{cursor:pointer;overflow:visible}
   .scene-hint{font-family:var(--font-display);font-size:.66rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);opacity:.75}
 
   /* fluid motion */
@@ -81,8 +81,8 @@
   @keyframes float{50%{transform:translateY(-9px)}}
   .tw{transform-box:fill-box;transform-origin:center;animation:tw 3.4s ease-in-out infinite;animation-delay:var(--d,0s)}
   @keyframes tw{50%{transform:scale(.55) rotate(18deg);opacity:.55}}
-  #planetCore{transform-box:fill-box;transform-origin:center}
-  #planetCore.boing{animation:boing .75s var(--spring)}
+  #heroCore{transform-box:fill-box;transform-origin:center}
+  #heroCore.boing{animation:boing .75s var(--spring)}
   @keyframes boing{30%{transform:scale(1.1,.92)}55%{transform:scale(.95,1.07)}80%{transform:scale(1.02,.98)}100%{transform:scale(1)}}
   .confetti{position:absolute;pointer-events:none;font-size:18px;line-height:1;animation:burst .9s var(--spring) forwards}
   @keyframes burst{to{transform:translate(var(--dx),var(--dy)) rotate(var(--r));opacity:0}}
@@ -177,7 +177,7 @@
   @media (max-width:860px){
     .hero .wrap{grid-template-columns:1fr;gap:8px}
     .scene-stage{order:-1}
-    #planetScene{width:min(320px,78vw)}
+    #heroScene{width:min(320px,78vw)}
     .night .wrap{grid-template-columns:1fr;gap:40px}
     .sky{height:300px}
     nav{display:none}
@@ -216,45 +216,117 @@
         </div>
       </div>
       <div class="scene-stage">
-        <svg id="planetScene" viewBox="0 0 440 420" width="400" role="img" tabindex="0" aria-label="Planeta con anillos y cohete en órbita — tócalo">
-          <!-- starbursts -->
-          <g class="tw" style="--d:0s"><path transform="translate(64,66)" d="M0 -15 L3.4 -3.4 L15 0 L3.4 3.4 L0 15 L-3.4 3.4 L-15 0 L-3.4 -3.4 Z" fill="#E8A33D"/></g>
-          <g class="tw" style="--d:1.1s"><path transform="translate(388,96)" d="M0 -11 L2.6 -2.6 L11 0 L2.6 2.6 L0 11 L-2.6 2.6 L-11 0 L-2.6 -2.6 Z" fill="#E98C6B"/></g>
-          <g class="tw" style="--d:2s"><path transform="translate(356,338)" d="M0 -13 L3 -3 L13 0 L3 3 L0 13 L-3 3 L-13 0 L-3 -3 Z" fill="#1F7A72"/></g>
-          <g class="tw" style="--d:.6s"><path transform="translate(52,320)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2 Z" fill="#E2622B"/></g>
-          <circle cx="122" cy="38" r="4" fill="#E2622B"/>
-          <circle cx="410" cy="210" r="4.5" fill="#E8A33D"/>
-          <circle cx="30" cy="196" r="3.5" fill="#1F7A72"/>
+        <svg id="heroScene" viewBox="0 0 460 420" width="410" role="img" tabindex="0" aria-label="Colección de juguetes — tócala y salta">
+          <!-- sparkles -->
+          <g class="tw" style="--d:0s"><path transform="translate(70,60)" d="M0 -15 L3.4 -3.4 L15 0 L3.4 3.4 L0 15 L-3.4 3.4 L-15 0 L-3.4 -3.4 Z" fill="#E8A33D"/></g>
+          <g class="tw" style="--d:1.1s"><path transform="translate(390,90)" d="M0 -11 L2.6 -2.6 L11 0 L2.6 2.6 L0 11 L-2.6 2.6 L-11 0 L-2.6 -2.6 Z" fill="#E98C6B"/></g>
+          <g class="tw" style="--d:2s"><path transform="translate(424,244)" d="M0 -9 L2 -2 L9 0 L2 2 L0 9 L-2 2 L-9 0 L-2 -2 Z" fill="#1F7A72"/></g>
+          <g class="tw" style="--d:.6s"><path transform="translate(36,178)" d="M0 -9 L2.2 -2.2 L9 0 L2.2 2.2 L0 9 L-2.2 2.2 L-9 0 L-2.2 -2.2 Z" fill="#E2622B"/></g>
+          <circle cx="250" cy="34" r="4" fill="#E8A33D"/>
+          <circle cx="150" cy="70" r="3" fill="#1F7A72"/>
 
-          <g class="float" style="transform-box:fill-box;transform-origin:center">
-            <g transform="translate(220,214)">
-              <g transform="rotate(-16)">
-                <path id="ringBack" d="M -152 0 A 152 56 0 0 1 152 0" fill="none" stroke="#E8A33D" stroke-width="11" stroke-linecap="round"/>
-                <g id="planetCore">
-                  <circle r="94" fill="#1F7A72"/>
-                  <path d="M -76 -54 A 93 93 0 0 1 -20 -91" stroke="#7FC4B8" stroke-width="11" fill="none" stroke-linecap="round"/>
-                  <circle cx="30" cy="-34" r="13" fill="#175F59"/>
-                  <circle cx="-26" cy="30" r="18" fill="#175F59"/>
-                  <circle cx="44" cy="38" r="9" fill="#175F59"/>
-                </g>
-                <path d="M -152 0 A 152 56 0 0 0 152 0" fill="none" stroke="#E8A33D" stroke-width="11" stroke-linecap="round"/>
-                <path id="orbitPath" d="M -168 0 A 168 62 0 1 1 168 0 A 168 62 0 1 1 -168 0" fill="none"/>
-                <g id="orbiter">
-                  <g>
-                    <path d="M -15 -7 L 5 -7 Q 18 0 5 7 L -15 7 Z" fill="#E2622B"/>
-                    <circle cx="-1" cy="0" r="3.6" fill="#F7F0E1"/>
-                    <path d="M -15 -7 L -22 -13 L -19 0 L -22 13 L -15 7 Z" fill="#E8A33D"/>
-                    <path d="M -21 -3 L -32 0 L -21 3 Z" fill="#E98C6B"/>
-                  </g>
-                  <animateMotion dur="14s" repeatCount="indefinite" rotate="auto">
-                    <mpath href="#orbitPath"/>
-                  </animateMotion>
-                </g>
+          <g id="heroCore">
+            <ellipse cx="235" cy="366" rx="208" ry="11" fill="#2B2320" opacity=".07"/>
+
+            <!-- cohete de juguete (atrás izquierda) -->
+            <g transform="translate(24,264) scale(.85)">
+              <path d="M45 4 Q66 34 66 74 L66 104 L24 104 L24 74 Q24 34 45 4 Z" fill="#F2EDDF"/>
+              <path d="M45 4 Q56 20 61 42 L29 42 Q34 20 45 4 Z" fill="#E2622B"/>
+              <circle cx="45" cy="66" r="10" fill="#16233F" stroke="#E8A33D" stroke-width="4"/>
+              <path d="M24 78 L6 108 L24 104 Z" fill="#E2622B"/>
+              <path d="M66 78 L84 108 L66 104 Z" fill="#E2622B"/>
+            </g>
+
+            <!-- torre apilable (atrás derecha) -->
+            <g transform="translate(352,267)">
+              <rect x="26" y="80" width="58" height="9" rx="4.5" fill="#2B2320"/>
+              <rect x="27" y="65" width="56" height="15" rx="7.5" fill="#1F7A72"/>
+              <rect x="33" y="68" width="10" height="4" rx="2" fill="#7FC4B8"/>
+              <rect x="33" y="52" width="44" height="14" rx="7" transform="rotate(-2 55 59)" fill="#E8A33D"/>
+              <rect x="39" y="55" width="9" height="4" rx="2" transform="rotate(-2 55 59)" fill="#F6E7C6"/>
+              <rect x="38" y="41" width="34" height="12" rx="6" transform="rotate(2 55 47)" fill="#E2622B"/>
+              <rect x="43" y="43.5" width="8" height="3.5" rx="1.75" transform="rotate(2 55 47)" fill="#F0A47E"/>
+              <rect x="43" y="31" width="24" height="11" rx="5.5" fill="#E98C6B"/>
+              <rect x="47" y="33" width="7" height="3.5" rx="1.75" fill="#F7DFD2"/>
+              <circle cx="55" cy="23" r="7" fill="#E2622B"/>
+              <circle cx="52.5" cy="20.5" r="2" fill="#F0A47E"/>
+            </g>
+
+            <!-- oso de peluche (centro) -->
+            <g transform="translate(200,290) scale(1.15)">
+              <circle cx="-24" cy="-64" r="11" fill="#E98C6B"/><circle cx="-24" cy="-64" r="5" fill="#F2A886"/>
+              <circle cx="24" cy="-64" r="11" fill="#E98C6B"/><circle cx="24" cy="-64" r="5" fill="#F2A886"/>
+              <circle cx="0" cy="-42" r="30" fill="#E98C6B"/>
+              <path d="M -22 -58 A 28 28 0 0 1 -6 -70" fill="none" stroke="#F2A886" stroke-width="5" stroke-linecap="round"/>
+              <ellipse cx="-30" cy="2" rx="9" ry="17" transform="rotate(20 -30 2)" fill="#E98C6B"/>
+              <ellipse cx="30" cy="2" rx="9" ry="17" transform="rotate(-20 30 2)" fill="#E98C6B"/>
+              <ellipse cx="0" cy="8" rx="27" ry="30" fill="#E98C6B"/>
+              <path d="M 18 -14 Q 30 8 16 30" fill="none" stroke="#C96A48" stroke-width="5" stroke-linecap="round" opacity=".7"/>
+              <ellipse cx="0" cy="10" rx="15" ry="18" fill="#F7F0E1"/>
+              <ellipse cx="0" cy="-32" rx="13" ry="10" fill="#F7F0E1"/>
+              <path d="M -4 -37 L 4 -37 Q 6 -37 5 -35 Q 2 -31 0 -31 Q -2 -31 -5 -35 Q -6 -37 -4 -37 Z" fill="#2B2320"/>
+              <path d="M 0 -31 Q 0 -27 -5 -26 M 0 -31 Q 0 -27 5 -26" fill="none" stroke="#2B2320" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="-11" cy="-46" r="3.4" fill="#2B2320"/><circle cx="-9.9" cy="-47.1" r="1.1" fill="#F7F0E1"/>
+              <circle cx="11" cy="-46" r="3.4" fill="#2B2320"/><circle cx="12.1" cy="-47.1" r="1.1" fill="#F7F0E1"/>
+              <circle cx="-18" cy="42" r="11" fill="#E98C6B"/><circle cx="-18" cy="44" r="5.5" fill="#F7F0E1"/>
+              <circle cx="18" cy="42" r="11" fill="#E98C6B"/><circle cx="18" cy="44" r="5.5" fill="#F7F0E1"/>
+            </g>
+
+            <!-- carro (medio izquierda) -->
+            <g transform="translate(84,296)">
+              <g class="bob">
+                <path d="M22 31 L14 15 Q13 12 17 14 L32 29 Z" fill="#E8A33D"/>
+                <path d="M10 46 Q8 33 22 31 L36 29 Q42 17 57 16 Q70 15 76 27 L86 29 Q99 31 101 40 Q102 46 94 46 L16 46 Z" fill="#E2622B"/>
+                <path d="M40 28 Q45 19 56 18 Q64 18 67 26 Z" fill="#F7F0E1"/>
+                <path d="M16 41 L94 41 Q97 41 96 44 L95 46 L16 46 Z" fill="#C94F1F"/>
+                <line x1="20" y1="38" x2="92" y2="38" stroke="#F7F0E1" stroke-width="2.5" stroke-linecap="round" opacity=".85"/>
+                <path d="M78 21 Q84 23 88 28" fill="none" stroke="#F0A47E" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="99" cy="36" r="2.6" fill="#E8A33D"/>
+              </g>
+              <circle cx="30" cy="49" r="9" fill="#2B2320"/><circle cx="30" cy="49" r="4" fill="#F7F0E1"/><circle cx="30" cy="49" r="1.6" fill="#E2622B"/>
+              <circle cx="78" cy="49" r="9" fill="#2B2320"/><circle cx="78" cy="49" r="4" fill="#F7F0E1"/><circle cx="78" cy="49" r="1.6" fill="#E2622B"/>
+            </g>
+
+            <!-- pato de arrastre (medio derecha) -->
+            <g transform="translate(268,272)">
+              <rect x="24" y="66" width="54" height="8" rx="4" fill="#1F7A72"/>
+              <circle cx="34" cy="78" r="6" fill="#2B2320"/><circle cx="34" cy="78" r="2.2" fill="#F7F0E1"/>
+              <circle cx="68" cy="78" r="6" fill="#2B2320"/><circle cx="68" cy="78" r="2.2" fill="#F7F0E1"/>
+              <g class="waddle">
+                <path d="M34 52 L25 40 Q24 37 28 39 L38 47 Z" fill="#E8A33D"/>
+                <ellipse cx="52" cy="54" rx="20" ry="13" fill="#E8A33D"/>
+                <ellipse cx="49" cy="55" rx="9" ry="6" transform="rotate(-15 49 55)" fill="#C98E2F"/>
+                <circle cx="68" cy="35" r="10" fill="#E8A33D"/>
+                <path d="M62 30 A10 10 0 0 1 68 25" fill="none" stroke="#F6E7C6" stroke-width="3" stroke-linecap="round"/>
+                <path d="M77 34 L86 37 L77 40 Z" fill="#E2622B"/>
+                <circle cx="70" cy="33" r="1.8" fill="#2B2320"/><circle cx="70.6" cy="32.4" r=".6" fill="#F7F0E1"/>
+              </g>
+            </g>
+
+            <!-- pelota (frente izquierda) -->
+            <g transform="translate(160,330) scale(1.08)">
+              <circle r="26" fill="#E2622B"/>
+              <path d="M -25.5 -5 Q 0 6 25.5 -5 L 25.5 4 Q 0 15 -25.5 4 Z" fill="#F7F0E1"/>
+              <path d="M -24 9 Q 0 19 24 9" stroke="#E8A33D" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <path d="M -19 -14 A 25 25 0 0 1 -4 -24" stroke="#F0A47E" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+            </g>
+
+            <!-- trompo (frente derecha) -->
+            <g transform="translate(252,314) scale(1.05)">
+              <g class="waddle">
+                <circle cx="0" cy="-36" r="5" fill="#E8A33D"/>
+                <rect x="-3.5" y="-34" width="7" height="10" fill="#175F59"/>
+                <path d="M -30 -14 Q 0 -4 30 -14 L 4 34 Q 0 37 -4 34 Z" fill="#1F7A72"/>
+                <ellipse cx="0" cy="-15" rx="30" ry="11" fill="#7FC4B8"/>
+                <ellipse cx="0" cy="-15" rx="18" ry="6.5" fill="#1F7A72"/>
+                <circle cx="0" cy="-15" r="3.5" fill="#E8A33D"/>
+                <path d="M -22 0 Q 0 9 22 0 L 17 11 Q 0 18 -17 11 Z" fill="#E8A33D"/>
+                <circle cx="0" cy="35" r="2.5" fill="#175F59"/>
               </g>
             </g>
           </g>
         </svg>
-        <span class="scene-hint">← toca el planeta</span>
+        <span class="scene-hint">← toca los juguetes</span>
       </div>
     </div>
   </section>
@@ -542,9 +614,9 @@
     document.querySelectorAll('animateMotion,animate,animateTransform').forEach(function(a){ a.remove(); });
   }
 
-  /* planet: squash-stretch bounce + starburst confetti */
-  var scene = document.getElementById('planetScene');
-  var core = document.getElementById('planetCore');
+  /* toy pile: squash-stretch bounce + starburst confetti */
+  var scene = document.getElementById('heroScene');
+  var core = document.getElementById('heroCore');
   var stage = scene.parentElement;
   var COLORS = ['#E2622B','#E8A33D','#1F7A72','#E98C6B'];
   function celebrate(){
