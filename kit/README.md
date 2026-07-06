@@ -60,6 +60,10 @@ detail dots + soft ground shadow ellipse. **No bare lines-and-circles primitives
   token (waddle=duck, bob=car, sway=mobile, float=planet, tw=star). Animation is EMBEDDED
   in each file (CSS keyframes + SMIL) — plays in any browser, even as an `<img>` embed,
   no JavaScript. The tap-to-boing interaction is site behavior, not in the asset.
+- `assets/escena-juguetes-animada.svg` — the CURRENT hero: grounded toy collage (smiley
+  teddy, blue rocket #3A497D, finned car, striped ball, trompo, duck, tower), animation
+  embedded. Collage toys also ship individually: oso-peluche, pelota, trompo(+animado),
+  cohete-azul. The planet scene is retired from the prototype but stays approved.
 - 0–3 icon DECISION: pull-along duck (pato-arrastre) chosen by Manu; Calder mobile retired
   from the prototype but remains approved. Blocks + rattle available to remix.
 - `alternativas-0-3/` — 3 candidate replacements for the 0–3 mobile (reads a bit
